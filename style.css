@@ -10,7 +10,10 @@ ul {
 /* Main styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: #CBE4DE;
+
+    background-image: linear-gradient(95.2deg, rgba(173, 252, 234, 1) 26.8%, rgba(192, 229, 246, 1) 64%);
+
 }
 
 body.no-transition * {
@@ -18,9 +21,15 @@ body.no-transition * {
     animation: none !important;
 }
 
+
 header {
     padding: 20px;
-    background-color: white;
+    background-color: transparent;
+}
+
+.headerHr {
+    margin: 0 9%;
+    color: #252A34;
 }
 
 nav {
@@ -42,7 +51,7 @@ nav ul li {
 }
 
 nav a {
-    color: rgb(67, 67, 67);
+    color: #252A34;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
@@ -67,69 +76,11 @@ nav a {
 }
 
 .logo {
-    max-width: 250px;
+    max-width: 300px;
     height: auto;
 }
 
-.title {
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 60px;
-    margin-top: 60px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-}
 
-.small {
-    font-size: 50px;
-    font-weight: 300;
-}
-
-.homeImage {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 80px;
-    height: 300px;
-}
-
-.subheading {
-    text-align: center;
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 25px;
-    margin-top: 20px;
-    color: rgb(98, 98, 98);
-    width: 30%;
-    max-width: 381px;
-}
-
-/* CTA button */
-button {
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    color: white;
-    background-color: #171717;
-    padding: 1em 2em;
-    border: none;
-    border-radius: .6rem;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-    transition: 0.2s ease-in-out;
-}
-
-button:hover {
-    background-color: #FF6584;
-}
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
@@ -137,16 +88,12 @@ button:hover {
         display: none;
     }
 
-    .title {
-        font-size: 50px;
-        margin-top: 0px;
-        margin-left: 10px;
-        margin-right: 10px;
+    .headerHr {
+        display: none;
     }
 
-    .subheading {
-        font-size: 20px;
-        width: 80%;
+    button:hover {
+        background-color: black;
     }
 
     nav {
@@ -159,15 +106,15 @@ button:hover {
     }
 
     .logo {
-        margin-bottom: 20px;
-        margin-top: 50px;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 
     .hamburger {
         display: block;
-        background-color: white;
+        background-color: transparent;
         padding: 10px;
-        color: black;
+        color: #252A34;
         text-align: center;
         cursor: pointer;
         font-size: 30px;
@@ -177,9 +124,9 @@ button:hover {
     .responsive-menu {
         display: none;
         flex-direction: column;
-        background-color: white;
+        background-color: transparent;
         padding: 10px;
-        color: black;
+        color: #252A34;
         animation: hamburguerAnim 0.1s ease-in-out forwards;
     }
 
@@ -205,4 +152,36 @@ button:hover {
         text-align: center;
 
     }
+}
+
+/* shapes */
+
+.shape {
+    position: absolute;
+    transition: all 5s ease-in-out;
+    z-index: -10;
+}
+
+.square {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(67, 169, 67, 0.238);
+    filter: blur(10px);
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 50px solid rgba(169, 199, 255, 0.429);
+    filter: blur(7px);
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(207, 149, 248, 0.214);
+    border-radius: 50%;
+    filter: blur(7px);
 }
