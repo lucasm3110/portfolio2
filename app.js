@@ -28,18 +28,17 @@ hamburger.addEventListener('click', () => {
     }
 });
 
-// Insert responsive menu into the DOM
+// Insert responsive menu
 const header = document.querySelector('header');
 header.appendChild(responsiveMenu);
 
 
 //Shapes
-// Function to generate random number between min and max
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-// Function to generate random shape
+// generate random shape
 function generateShape() {
     const container = document.getElementById('container');
     const shapeTypes = ['square', 'triangle', 'circle'];
@@ -47,8 +46,8 @@ function generateShape() {
     const shape = document.createElement('div');
     shape.classList.add('shape', shapeType);
 
-    const maxX = window.innerWidth - 100; // Adjust for shape width
-    const maxY = window.innerHeight - 100; // Adjust for shape height
+    const maxX = window.innerWidth - 100;
+    const maxY = window.innerHeight - 100;
     const x = getRandomNumber(0, maxX);
     const y = getRandomNumber(0, maxY);
 
@@ -59,10 +58,10 @@ function generateShape() {
     moveShape(shape);
 }
 
-// Function to move the shape randomly
+//move the shape randomly
 function moveShape(shape) {
-    const maxX = window.innerWidth - 100; // Adjust for shape width
-    const maxY = window.innerHeight - 100; // Adjust for shape height
+    const maxX = window.innerWidth - 100;
+    const maxY = window.innerHeight - 100;
     const x = getRandomNumber(0, maxX);
     const y = getRandomNumber(0, maxY);
 
@@ -74,7 +73,7 @@ function moveShape(shape) {
     }, 5000);
 }
 
-// Generate a specified number of shapes
+// shape numbers
 const numShapes = 20;
 for (let i = 0; i < numShapes; i++) {
     generateShape();
