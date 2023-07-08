@@ -244,8 +244,8 @@ section h1 {
 
 .aboutContainer {
     display: flex;
-    align-items: start;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .aboutContainer p {
@@ -257,6 +257,12 @@ section h1 {
     padding-left: 30px;
 }
 
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .card {
     background-color: transparent;
     overflow: hidden;
@@ -266,6 +272,8 @@ section h1 {
     border-radius: 20px;
     padding: 20px;
     margin: 0 auto;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 
@@ -413,7 +421,11 @@ section h1 {
     }
 
     .aboutContainer p {
+        text-align: center;
+        margin: 0 auto;
         margin-bottom: 50px;
+        padding: 0;
+        width: 100%;
     }
 
     #about h1 {
@@ -422,6 +434,11 @@ section h1 {
 
     .skill-level {
         width: 100px;
+    }
+
+    .card {
+        margin-right: 0px;
+        margin-left: 0px;
     }
 
 }
