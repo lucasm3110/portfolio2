@@ -11,9 +11,7 @@ ul {
 /* Main styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #CBE4DE;
     background-image: linear-gradient(95.2deg, rgb(135, 255, 227) 26.8%, rgb(166, 224, 251) 64%);
-
 }
 
 body.no-transition * {
@@ -25,11 +23,6 @@ body.no-transition * {
 header {
     padding: 20px;
     background-color: transparent;
-}
-
-.headerHr {
-    width: 50%;
-    color: #252a347b;
 }
 
 nav {
@@ -60,11 +53,11 @@ nav a {
     font-size: 18px;
     margin-right: 20px;
     margin-left: 20px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
     color: #8f4ef7;
-    transition: all 0.2s ease-out;
 }
 
 .hamburger {
@@ -82,15 +75,16 @@ nav a:hover {
 }
 
 .logo {
-    max-width: 300px;
-    height: auto;
-    display: flex;
+    font-family: 'Satisfy', cursive;
+    font-size: 70px;
+    margin: 0 auto;
+    letter-spacing: 5px;
 }
 
 .frontContent {
     height: auto;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 30px;
     width: 80%;
     border-radius: 30px;
     padding: 10px 20px 80px 20px;
@@ -192,6 +186,7 @@ button {
     align-items: center;
     margin: 0 auto;
     transition: all 0.3s ease;
+    color: #252A34;
 }
 
 button:hover {
@@ -227,7 +222,7 @@ button:hover {
 .wave-emoji {
     display: inline-block;
     animation: wave 1s infinite;
-    font-size: 48px;
+    font-size: 60px;
 }
 
 /* Responsive styles */
@@ -251,12 +246,6 @@ button:hover {
 
     nav {
         justify-content: space-around;
-    }
-
-
-    .logo {
-        margin-bottom: 0;
-        margin-top: 0;
     }
 
     .iconLinks a:hover {
@@ -283,47 +272,35 @@ button:hover {
         background-color: transparent;
         padding: 10px;
         color: #252A34;
-        animation: hamburguerAnim 0.1s ease-in-out forwards;
     }
+}
 
-    @keyframes hamburguerAnim {
-        0% {
-            transform: translateY(-50%);
-        }
+.responsive-menu a {
+    color: #252A34;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
 
-        100% {
-            transform: translateY(0);
-        }
-    }
+}
 
-    .responsive-menu a {
-        color: rgb(67, 67, 67);
-        text-decoration: none;
-        font-family: 'Poppins', sans-serif;
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 15px;
-        margin-bottom: 10px;
-        display: block;
-        text-align: center;
+.frontContent {
+    width: 80%;
+}
 
-    }
+.bigText {
+    font-size: 70px;
+    margin: 30px 50px;
+}
 
-    .frontContent {
-        width: 80%;
-    }
+.smallText {
+    font-size: 25px;
+}
 
-    .bigText {
-        font-size: 70px;
-        margin: 30px 50px;
-    }
-
-    .smallText {
-        font-size: 25px;
-    }
-
-    .headerHr {
-        width: 80%;
-    }
-
+.headerHr {
+    width: 80%;
 }

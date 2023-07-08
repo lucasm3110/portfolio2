@@ -57,7 +57,7 @@ function generateShape() {
     container.appendChild(shape);
 }
 // shape numbers
-const numShapes = 30;
+const numShapes = 40;
 for (let i = 0; i < numShapes; i++) {
     generateShape();
 }
