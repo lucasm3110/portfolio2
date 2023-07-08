@@ -12,6 +12,7 @@ ul {
 body {
     font-family: Arial, sans-serif;
     background-image: linear-gradient(95.2deg, rgb(135, 255, 227) 26.8%, rgb(166, 224, 251) 64%);
+    color: #252A34;
 }
 
 body.no-transition * {
@@ -137,11 +138,6 @@ nav a:hover {
     opacity: 100%;
 }
 
-.firstStuff {
-    height: 100vh;
-}
-
-
 /* shapes */
 .shape {
     position: absolute;
@@ -176,7 +172,7 @@ nav a:hover {
 button {
     border: 2px solid black;
     background-color: transparent;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
     font-size: 18px;
     font-weight: 400;
@@ -225,6 +221,102 @@ button:hover {
     font-size: 60px;
 }
 
+#about {
+    height: auto;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 30px;
+    padding: 10px 20px 80px 20px;
+    box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.084);
+    transition: all 0.3s ease;
+    margin-top: 100px;
+}
+
+#about:hover {
+    transform: scale(1.03);
+}
+
+section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 50px;
+}
+
+.aboutContainer {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.aboutContainer p {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-size: 23px;
+    font-weight: 300;
+    color: #252A34;
+    padding-left: 30px;
+}
+
+.card {
+    background-color: transparent;
+    overflow: hidden;
+    margin-left: 50px;
+    padding-right: 30px;
+    background-color: rgba(255, 255, 255, 0.091);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    width: 120px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.skill-level {
+    width: 160px;
+    height: 10px;
+    background-color: #252a342c;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.skill-percent {
+    background-color: #252A34;
+    height: 100%;
+}
+
+.skill-percent-number {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+#projects {
+    height: auto;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 30px;
+    padding: 10px 20px 80px 20px;
+    box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.084);
+    transition: all 0.3s ease;
+    margin-top: 100px;
+}
+
+#projects:hover {
+    transform: scale(1.03);
+}
+
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
     nav ul {
@@ -234,6 +326,15 @@ button:hover {
     .frontContent {
         padding: 10px 20px 30px 20px;
     }
+
+    #about:hover {
+        transform: scale(1);
+    }
+
+    #projects:hover {
+        transform: scale(1);
+    }
+
 
     .avatar {
         height: 100px;
@@ -273,34 +374,55 @@ button:hover {
         padding: 10px;
         color: #252A34;
     }
+
+    .responsive-menu a {
+        color: #252A34;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 10px;
+        display: block;
+        text-align: center;
+
+    }
+
+    .frontContent {
+        width: 80%;
+    }
+
+    .bigText {
+        font-size: 70px;
+        margin: 30px 50px;
+    }
+
+    .smallText {
+        font-size: 25px;
+    }
+
+    .headerHr {
+        width: 80%;
+    }
 }
 
-.responsive-menu a {
-    color: #252A34;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 20px;
-    margin-bottom: 10px;
-    display: block;
-    text-align: center;
+@media screen and (max-width: 1000px) {
+    .aboutContainer {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
-}
+    .aboutContainer p {
+        margin-bottom: 50px;
+    }
 
-.frontContent {
-    width: 80%;
-}
+    #about h1 {
+        margin-bottom: 10px;
+    }
 
-.bigText {
-    font-size: 70px;
-    margin: 30px 50px;
-}
+    .skill-level {
+        width: 100px;
+    }
 
-.smallText {
-    font-size: 25px;
-}
-
-.headerHr {
-    width: 80%;
 }

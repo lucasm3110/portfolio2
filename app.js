@@ -46,8 +46,9 @@ function generateShape() {
     const shape = document.createElement('div');
     shape.classList.add('shape', shapeType);
 
-    const maxX = window.innerWidth - 100;
-    const maxY = window.innerHeight - 100;
+    const maxX = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
+    const maxY = Math.max(document.documentElement.scrollWidth, document.body.scrollWidth);
+
     const x = getRandomNumber(0, maxX);
     const y = getRandomNumber(0, maxY);
 
@@ -57,7 +58,7 @@ function generateShape() {
     container.appendChild(shape);
 }
 // shape numbers
-const numShapes = 40;
+const numShapes = 100;
 for (let i = 0; i < numShapes; i++) {
     generateShape();
 }
