@@ -91,15 +91,23 @@ nav a:hover {
     height: auto;
     margin: 0 auto;
     margin-top: 50px;
+    width: 80%;
+    border-radius: 30px;
+    padding: 10px 20px 80px 20px;
+    box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.084);
+    transition: all 0.3s ease;
+    z-index: 99;
+}
+
+.frontContent:hover {
+    transform: scale(1.03);
 }
 
 .bigText {
     font-family: 'Satisfy', cursive;
     text-align: center;
     font-size: 120px;
-    background: linear-gradient(to right, #9f64ff, #4fff5d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #252A34;
     margin-bottom: 0;
 }
 
@@ -107,11 +115,9 @@ nav a:hover {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-size: 35px;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 0;
-    background: linear-gradient(to right, #a065ff, #5fff6c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #252A34;
 }
 
 .lineBreak {
@@ -129,8 +135,100 @@ nav a:hover {
     opacity: 70%;
     margin: 0px 30px;
     margin-top: 30px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
 }
 
+.iconLinks a:hover {
+    opacity: 100%;
+}
+
+.firstStuff {
+    height: 100vh;
+}
+
+
+/* shapes */
+.shape {
+    position: absolute;
+    transition: all 5s ease-in-out;
+    z-index: -10;
+}
+
+.square {
+    background-color: rgba(67, 169, 67, 0.42);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    filter: blur(50px);
+}
+
+.triangle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(101, 117, 255, 0.51);
+    filter: blur(50px);
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(207, 149, 248, 0.51);
+    border-radius: 50%;
+    filter: blur(50px);
+}
+
+button {
+    border: 2px solid black;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 40px 8px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #8f4ef75b;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.avatar img {
+    height: 130px;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.wave-emoji {
+    display: inline-block;
+    animation: wave 1s infinite;
+    font-size: 48px;
+}
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
@@ -138,12 +236,17 @@ nav a:hover {
         display: none;
     }
 
-    .headerHr {
-        display: none;
+    .frontContent {
+        padding: 10px 20px 30px 20px;
+    }
+
+    .avatar {
+        height: 100px;
+        margin-bottom: 10px;
     }
 
     button:hover {
-        background-color: black;
+        background-color: transparent;
     }
 
     nav {
@@ -156,6 +259,10 @@ nav a:hover {
         margin-top: 0;
     }
 
+    .iconLinks a:hover {
+        opacity: 70%;
+    }
+
     .hamburger {
         display: block;
         background-color: transparent;
@@ -166,6 +273,9 @@ nav a:hover {
         font-size: 30px;
     }
 
+    .frontContent:hover {
+        transform: scale(1);
+    }
 
     .responsive-menu {
         display: none;
@@ -200,47 +310,20 @@ nav a:hover {
     }
 
     .frontContent {
-        margin-top: 0px;
+        width: 80%;
     }
 
     .bigText {
-        font-size: 80px;
+        font-size: 70px;
+        margin: 30px 50px;
     }
 
     .smallText {
         font-size: 25px;
     }
 
-}
+    .headerHr {
+        width: 80%;
+    }
 
-/* shapes */
-
-.shape {
-    position: absolute;
-    transition: all 5s ease-in-out;
-    z-index: -10;
-}
-
-.square {
-    background-color: rgba(67, 169, 67, 0.42);
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    filter: blur(50px);
-}
-
-.triangle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: rgba(101, 117, 255, 0.51);
-    filter: blur(50px);
-}
-
-.circle {
-    width: 100px;
-    height: 100px;
-    background-color: rgba(207, 149, 248, 0.51);
-    border-radius: 50%;
-    filter: blur(50px);
 }

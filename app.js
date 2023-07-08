@@ -57,7 +57,12 @@ function generateShape() {
     container.appendChild(shape);
 }
 // shape numbers
-const numShapes = 25;
+const numShapes = 30;
 for (let i = 0; i < numShapes; i++) {
     generateShape();
+}
+
+let link = undefined
+function scrollToSection(link) {
+    window.open(link, "_self")
 }
