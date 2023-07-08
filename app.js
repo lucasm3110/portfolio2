@@ -55,45 +55,9 @@ function generateShape() {
     shape.style.top = y + 'px';
 
     container.appendChild(shape);
-    moveShape(shape);
 }
-
-function isMobileDevice() {
-    return window.innerWidth <= 768; // Adjust the value according to your needs
-}
-
-if (isMobileDevice()) {
-    function moveShape(shape) {
-        const maxX = window.innerWidth - 100;
-        const maxY = window.innerHeight - 100;
-        const x = getRandomNumber(0, maxX);
-        const y = getRandomNumber(0, maxY);
-
-        shape.style.left = x + 'px';
-        shape.style.top = y + 'px';
-
-    }
-} else {
-    //move the shape randomly
-    function moveShape(shape) {
-        const maxX = window.innerWidth - 100;
-        const maxY = window.innerHeight - 100;
-        const x = getRandomNumber(0, maxX);
-        const y = getRandomNumber(0, maxY);
-
-        shape.style.left = x + 'px';
-        shape.style.top = y + 'px';
-
-        setTimeout(() => {
-            moveShape(shape);
-        }, 5000);
-    }
-}
-
-
-
 // shape numbers
-const numShapes = 20;
+const numShapes = 25;
 for (let i = 0; i < numShapes; i++) {
     generateShape();
 }
