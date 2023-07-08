@@ -119,6 +119,18 @@ nav a:hover {
     height: 0;
 }
 
+.iconLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconLinks a {
+    opacity: 70%;
+    margin: 0px 30px;
+    margin-top: 30px;
+}
+
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
