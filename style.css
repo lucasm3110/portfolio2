@@ -396,6 +396,24 @@ section h1 {
         display: none;
     }
 
+    .circles1 {
+        height: 500px;
+        width: 500px;
+        background-color: #bc4ef7b9;
+    }
+
+    .circles2 {
+        height: 500px;
+        width: 500px;
+        background-color: #ff90f896;
+    }
+
+    .circles3 {
+        height: 800px;
+        width: 800px;
+        background-color: #68ff7a94;
+    }
+
     .frontContent {
         padding: 10px 20px 30px 20px;
         width: 80%;
