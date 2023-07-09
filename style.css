@@ -72,7 +72,7 @@ nav a:hover {
 
 .logo {
     font-family: 'Satisfy', cursive;
-    font-size: 50px;
+    font-size: 70px;
     margin: 0 auto;
     letter-spacing: 5px;
     text-align: center;
@@ -87,7 +87,7 @@ nav a:hover {
     padding: 10px 20px 80px 20px;
     box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.166);
     transition: all 0.3s ease;
-    z-index: 99;
+    position: relative;
 }
 
 .frontContent:hover {
@@ -197,6 +197,7 @@ button:hover {
     box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.166);
     transition: all 0.3s ease;
     margin-top: 100px;
+    position: relative;
 }
 
 #about:hover {
@@ -289,6 +290,7 @@ section h1 {
     transition: all 0.3s ease;
     margin-top: 100px;
     z-index: 99;
+    position: relative;
 }
 
 #projects:hover {
@@ -342,14 +344,10 @@ section h1 {
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
-    /* nav ul {
-        display: none;
-    } */
-
     .circles1 {
         height: 500px;
         width: 500px;
-        background-color: #bc4ef7b9;
+        background-color: #bc4ef7e8;
         right: 40%;
     }
 
@@ -357,13 +355,13 @@ section h1 {
         height: 500px;
         width: 500px;
         right: 20%;
-        background-color: #ff90f896;
+        background-color: #ff90f8cb;
     }
 
     .circles3 {
         height: 800px;
         width: 800px;
-        background-color: #68ff7a94;
+        background-color: #68ff7ac8;
     }
 
     .frontContent {
@@ -436,7 +434,7 @@ section h1 {
     }
 
     .logo {
-        font-size: 40px;
+        font-size: 60px;
         margin: 0;
     }
 
