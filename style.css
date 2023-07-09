@@ -13,6 +13,7 @@ ul {
 body {
     font-family: Arial, sans-serif;
     color: #252A34;
+    background-color: rgb(98, 255, 218);
     background-image: linear-gradient(95.2deg, rgb(98, 255, 218) 26.8%, rgb(113, 210, 255) 64%);
 }
 
@@ -69,23 +70,18 @@ nav a:hover {
     display: none;
 }
 
-.logoContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .logo {
     font-family: 'Satisfy', cursive;
-    font-size: 70px;
+    font-size: 50px;
     margin: 0 auto;
     letter-spacing: 5px;
+    text-align: center;
 }
 
 .frontContent {
     height: auto;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 10px;
     width: 70%;
     border-radius: 30px;
     padding: 10px 20px 80px 20px;
@@ -101,7 +97,7 @@ nav a:hover {
 .bigText {
     font-family: 'Satisfy', cursive;
     text-align: center;
-    font-size: 120px;
+    font-size: 100px;
     color: #252A34;
     margin-bottom: 0;
 }
@@ -113,6 +109,7 @@ nav a:hover {
     font-weight: 300;
     margin-top: 0;
     color: #252A34;
+    margin: 0;
 }
 
 .lineBreak {
@@ -168,7 +165,7 @@ button:hover {
 }
 
 .avatar img {
-    height: 130px;
+    height: 100px;
 }
 
 @keyframes wave {
@@ -188,7 +185,7 @@ button:hover {
 .wave-emoji {
     display: inline-block;
     animation: wave 1s infinite;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 #about {
@@ -302,7 +299,7 @@ section h1 {
 .circles1 {
     height: 500px;
     width: 500px;
-    background-color: #bc4ef76b;
+    background-color: #bc4ef794;
     border-radius: 50%;
     position: absolute;
     right: 50%;
@@ -315,7 +312,7 @@ section h1 {
 .circles2 {
     height: 500px;
     width: 500px;
-    background-color: #ff90f870;
+    background-color: #ff90f8a3;
     border-radius: 50%;
     position: absolute;
     right: 50%;
@@ -329,7 +326,7 @@ section h1 {
 .circles3 {
     height: 800px;
     width: 800px;
-    background-color: #68ff7a58;
+    background-color: #68ff7a8d;
     border-radius: 50%;
     position: absolute;
     right: 10%;
@@ -345,15 +342,15 @@ section h1 {
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
-    nav ul {
+    /* nav ul {
         display: none;
-    }
+    } */
 
     .circles1 {
         height: 500px;
         width: 500px;
         background-color: #bc4ef7b9;
-        right: 20%;
+        right: 40%;
     }
 
     .circles2 {
@@ -393,33 +390,28 @@ section h1 {
 
     .avatar {
         height: 100px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+
+    .avatar img {
+        height: 80px;
+    }
+
+    .wave-emoji {
+        font-size: 35px;
     }
 
     button:hover {
         background-color: transparent;
     }
 
-    nav {
-        justify-content: space-around;
-    }
-
-    .iconLinks a:hover {
-        opacity: 70%;
-    }
-
-    .hamburger {
-        display: block;
-        background-color: transparent;
-        padding: 10px;
-        color: #252A34;
-        text-align: center;
-        cursor: pointer;
-        font-size: 30px;
-    }
-
     .frontContent:hover {
         transform: scale(1);
+    }
+
+    .frontContent {
+        margin-top: 10px;
     }
 
     .circles1 {
@@ -430,38 +422,41 @@ section h1 {
         z-index: -100;
     }
 
-    .responsive-menu {
-        display: none;
-        flex-direction: column;
-        background-color: transparent;
-        padding: 10px;
-        color: #252A34;
-    }
-
-    .responsive-menu a {
-        color: #252A34;
-        text-decoration: none;
-        font-family: 'Poppins', sans-serif;
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 20px;
-        margin-bottom: 10px;
-        display: block;
-        text-align: center;
-
-    }
-
     .bigText {
-        font-size: 70px;
-        margin: 30px 50px;
+        font-size: 60px;
+        margin: 15px 15px;
     }
 
     .smallText {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .headerHr {
         width: 80%;
+    }
+
+    .logo {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    ul a {
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .iconLinks a {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #about {
+        margin-top: 50px;
+    }
+
+    #projects {
+        margin-top: 50px;
     }
 }
 
