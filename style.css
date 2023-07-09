@@ -464,6 +464,10 @@ textarea {
         filter: blur(80px);
     }
 
+    .item p {
+        margin-right: 0;
+    }
+
     .circles2 {
         height: 500px;
         width: 500px;
