@@ -461,7 +461,7 @@ textarea {
         width: 500px;
         background-color: #5c4ef7c0;
         right: 45%;
-        bottom: 45%;
+        bottom: 15%;
         filter: blur(80px);
     }
 
@@ -668,3 +668,5 @@ textarea {
         padding: 0;
     }
 }
+
+@media screen and (max-width: 350px) {}
