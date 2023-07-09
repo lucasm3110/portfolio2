@@ -134,7 +134,7 @@ nav a:hover {
     width: 70%;
     margin-top: 20px;
     margin-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.115);
+    background-color: rgba(255, 255, 255, 0.029);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.053);
 }
 
@@ -548,18 +548,19 @@ textarea {
 
     .bigText {
         font-size: 60px;
-        margin: 15px 15px;
+        margin: 5px 15px;
     }
 
     .smallText {
         font-size: 20px;
         background-color: transparent;
+        padding: 0 10px 0 10px;
     }
 
     .introText {
         font-size: 18px;
-        padding: 10px 20px 10px 20px;
-        background-color: rgba(255, 255, 255, 0.084);
+        padding: 10px 40px 10px 40px;
+        background-color: rgba(255, 255, 255, 0.029);
     }
 
     .headerHr {
