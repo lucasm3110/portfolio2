@@ -459,7 +459,7 @@ textarea {
     .circles1 {
         height: 500px;
         width: 500px;
-        background-color: #b64ef7c0;
+        background-color: #924ef7c0;
         right: 40%;
         filter: blur(80px);
     }
@@ -479,7 +479,7 @@ textarea {
     .circles3 {
         height: 800px;
         width: 800px;
-        background-color: #68ff7ac8;
+        background-color: #ffa268c8;
         filter: blur(80px);
     }
 
