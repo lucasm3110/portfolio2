@@ -23,17 +23,12 @@
                     <ul>
                         <li><a href="#about">About</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <div class="hamburger">&#9776;</div>
                 </div>
             </nav>
         </header>
-
-
-        <!-- Shapes -->
-        <div id="container"></div>
-
 
         <main>
 
@@ -45,35 +40,45 @@
                     <img src=" /images/avatar.png" alt="">
                 </div>
                 <h1 style="margin-top:0px;" class="bigText">I'm Lucas</h1>
-                <h2 class="smallText">A front-end web developer</h1>
+                <h2 class="smallText">A front-end web developer</h2>
+                <h3 class="introText"><strong>Welcome</strong> to my front-end developer <strong>ePortfolio!</strong>
+                    I'm a skilled
+                    front-end developer
+                    with experience in <strong>HTML, CSS, and JavaScript,</strong> dedicated to crafting intuitive and
+                    visually appealing
+                    <strong>user experiences.</strong>
+                </h3>
 
-                    <div class="iconLinks">
-                        <a href="https://github.com/lucasm3110" target="_blank">
-                            <img src="/images/github.png" alt="" height="40px">
-                        </a>
-                        <a href="https://www.linkedin.com/in/lucas-medeiros-685a82280/" target="_blank">
-                            <img src="/images/linkedin.png" alt="" height="40px">
-                        </a>
-                        <a href="/LucasMedeirosResume.pdf" target="_blank">
-                            <img src="/images/pdf.png" alt="" height="40px">
-                        </a>
-                    </div>
-                    <button onclick="scrollToSection('#about')">Dig Deeper</button>
-                    <div class="circles2"></div>
+                <div class="iconLinks">
+                    <a href="https://github.com/lucasm3110" target="_blank">
+                        <img src="/images/github.png" alt="" height="40px">
+                    </a>
+                    <a href="https://www.linkedin.com/in/lucas-medeiros-685a82280/" target="_blank">
+                        <img src="/images/linkedin.png" alt="" height="40px">
+                    </a>
+                    <a href="/LucasMedeirosResume.pdf" target="_blank">
+                        <img src="/images/pdf.png" alt="" height="40px">
+                    </a>
+                </div>
+                <button onclick="scrollToSection('#contact')">Let's Talk Soon!</button>
+                <div class="circles2"></div>
             </div>
 
     </div>
 
     <section id="about">
-        <h1>About</h1>
+        <h1>About <a href="LucasMedeirosResume.pdf" target="_blank"><img src="/images/pdf.png" height="41px"
+                    style="opacity: 85%;"></a></h1>
         <div class="aboutContainer">
             <div class="item">
-                <p>I am a highly passionate <strong>frontend web developer</strong> with prior experience in also coding
+                <p>I am a highly passionate <strong>frontend web developer</strong> with prior experience in
+                    also coding
                     indie games.
                     Seeking
                     my first <strong>internship,</strong> I am ready to apply my coding expertise to develop
                     <strong>user-friendly and responsive
-                        web applications, utilizing a creative mindset, problem-solving skills, and a strong drive to
+                        web applications, utilizing a creative mindset, problem-solving skills, and a strong
+                        drive to
                         learn
                         various programming languages and frameworks.</strong>
                 </p>
@@ -125,19 +130,69 @@
                             <div class="skill-percent-number">60%</div>
                         </div>
                         <div class="circles3"></div>
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <section id="projects">
-        <h1>Projects</h1>
+        <h1>Projects <a href="https://github.com/lucasm3110" target="_blank"><img src="/images/github.png" height="41px"
+                    style="opacity: 85%;"></a></h1>
+        <div class="projectSectionContainer">
+            <div class="item">
+                <img src="/images/p1.png" alt="">
+            </div>
+            <div class="projectLineBreak"></div>
+            <div class="item">
+                <div>
+                    <h2>JM³ Finance <a href="https://www.jm3finance.com/" target="_blank"><img
+                                src="/images/openLink.png"></a></h2>
+                    <p>Introducing a <strong>sleek and intuitive</strong> website designed for a finance
+                        company. This
+                        meticulously crafted platform offers <strong>seamless navigation, showcasing the company's
+                            comprehensive
+                            range of financial services and solutions.</strong> </p>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="projectSectionContainer" id="nd">
+            <div class="item">
+                <img src="/images/p2.png" alt="">
+            </div>
+            <div class="projectLineBreak"></div>
+            <div class="item">
+                <div>
+                    <div class="circles2"></div>
+                    <h2>JRosa Design <a href="https://www.jrosadesign.com/" target="_blank"><img
+                                src="/images/openLink.png"></a></h2>
+                    <p>Introducing an <strong>elegant website</strong> for a cabinet company. With its <strong>stylish
+                            design, intuitive
+                            interface, and captivating visuals,</strong> this website exemplifies the craftsmanship and
+                        excellence
+                        synonymous with the company's products.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+            <input type="text" name="name" placeholder="Name"><br>
+            <input type="email" name="email" placeholder="your@email.com"><br>
+            <textarea rows="4" cols="30" placeholder="Messege" required></textarea>
+            <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+            <input type="hidden" name="_subject" value="Portfolio Submission">
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit">Send</button>
+        </form>
+
     </section>
     </main>
-
-
 
 </body>
 

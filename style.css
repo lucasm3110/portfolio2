@@ -9,6 +9,12 @@ ul {
     box-sizing: border-box;
 }
 
+*,
+html {
+
+    scroll-behavior: smooth !important;
+}
+
 /* Main styles */
 body {
     font-family: Arial, sans-serif;
@@ -110,11 +116,26 @@ nav a:hover {
     margin-top: 0;
     color: #252A34;
     margin: 0;
-    background-color: rgba(255, 255, 255, 0.091);
     width: fit-content;
     margin: 0 auto;
     padding: 5px 50px 5px 50px;
     border-radius: 30px;
+}
+
+.introText {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    color: #252A34;
+    margin: 0 auto;
+    padding: 10px 60px 10px 60px;
+    border-radius: 30px;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.115);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.053);
 }
 
 .lineBreak {
@@ -129,11 +150,11 @@ nav a:hover {
 }
 
 .iconLinks a {
-    opacity: 70%;
     margin: 0px 30px;
     margin-top: 30px;
     margin-bottom: 30px;
     transition: all 0.3s ease;
+    opacity: 85%;
 }
 
 .iconLinks a:hover {
@@ -144,7 +165,7 @@ nav a:hover {
 button {
     border: 2px solid black;
     background-color: transparent;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
     font-size: 18px;
     font-weight: 400;
@@ -206,6 +227,23 @@ button:hover {
 }
 
 #about:hover {
+    transform: scale(1.03);
+}
+
+#contact {
+    height: auto;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 30px;
+    padding: 10px 20px 80px 20px;
+    box-shadow: 20px 20px 100px rgba(0, 0, 0, 0.166);
+    transition: all 0.3s ease;
+    margin-top: 100px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#contact:hover {
     transform: scale(1.03);
 }
 
@@ -344,7 +382,76 @@ section h1 {
     will-change: transform;
 }
 
+.projectSectionContainer {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    height: auto;
+    flex-wrap: wrap;
+}
 
+#nd {
+    flex-direction: row-reverse;
+}
+
+.item img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.272);
+}
+
+.item {
+    flex-basis: 50%;
+}
+
+.item h2 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.item p {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 30px;
+}
+
+.item a img {
+    height: 30px;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+#contact form {
+    text-align: center;
+}
+
+input {
+    margin-bottom: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.37);
+    width: 40%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.37);
+    width: 40%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    resize: none;
+}
 
 
 /* Responsive styles */
@@ -385,6 +492,10 @@ section h1 {
         transform: scale(1);
     }
 
+    #contact:hover {
+        transform: scale(1);
+    }
+
     #about {
         width: 80%;
     }
@@ -393,6 +504,13 @@ section h1 {
         width: 80%;
     }
 
+    #contact {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
 
     .avatar {
         height: 100px;
@@ -435,6 +553,13 @@ section h1 {
 
     .smallText {
         font-size: 20px;
+        background-color: transparent;
+    }
+
+    .introText {
+        font-size: 18px;
+        padding: 10px 20px 10px 20px;
+        background-color: rgba(255, 255, 255, 0.084);
     }
 
     .headerHr {
@@ -462,6 +587,14 @@ section h1 {
 
     #projects {
         margin-top: 50px;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    textarea {
+        width: 80%;
     }
 }
 
@@ -504,5 +637,27 @@ section h1 {
     .projectSlide {
         margin-bottom: 0;
         width: 99%;
+    }
+
+    .item img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .projectLineBreak {
+        flex-basis: 100%;
+        height: 0;
+    }
+
+    .projectSectionContainer {
+        justify-content: center;
+    }
+
+    .item {
+        flex-basis: content;
+    }
+
+    .item p {
+        padding: 0;
     }
 }
