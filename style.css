@@ -200,7 +200,7 @@ button:hover {
     }
 
     50% {
-        transform: rotate(-10deg);
+        transform: rotate(-15deg);
     }
 
     100% {
@@ -210,7 +210,7 @@ button:hover {
 
 .wave-emoji {
     display: inline-block;
-    animation: wave 1s infinite;
+    animation: wave 0.8s infinite;
     font-size: 50px;
 }
 
