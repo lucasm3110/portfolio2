@@ -520,6 +520,7 @@ textarea {
 
     h1 {
         font-size: 60px;
+        padding-top: 40px;
     }
 
     .avatar {
@@ -529,7 +530,8 @@ textarea {
     }
 
     .avatar img {
-        height: 80px;
+        height: 120px;
+        margin-top: 50px;
     }
 
     .wave-emoji {
