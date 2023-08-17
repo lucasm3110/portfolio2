@@ -191,7 +191,10 @@ button:hover {
 }
 
 .avatar img {
-    height: 100px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.308);
+    margin-bottom: 10px;
 }
 
 @keyframes wave {
